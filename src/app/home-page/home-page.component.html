@@ -1,0 +1,70 @@
+
+<!-- navbar-->
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Navbar</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+  
+  
+  
+  <!--body -->
+  
+  <div class="container"> 
+  
+  <!-- forms -->
+  
+    <div class="row">
+      <div class="col-lg">
+  
+        <form  class="form-group" #heroForm="ngForm" (submit)="onSubmit(heroForm)">
+          <div >
+            <mat-form-field appearance="fill">
+              <mat-label>Nome*</mat-label>
+              <input required type="text" [(ngModel)]="user.nome" name="nome" matInput  placeholder="Rossi">
+            </mat-form-field>
+          </div>
+          <div >
+            <mat-form-field appearance="fill">
+              <mat-label>Cognome*</mat-label>
+              <input  required type="text" [(ngModel)]="user.cognome" name="cognome" matInput  placeholder="Mario" >
+            </mat-form-field>
+          </div>
+          <div >
+            <mat-form-field appearance="fill">
+              <mat-label>DataNascita*</mat-label>
+              <input required type="text"  [(ngModel)]="user.dataNascita" name="dataNascita" matInput  placeholder="12/02/2000">
+            </mat-form-field>
+          </div>
+  
+          <div >
+            <mat-form-field appearance="fill">
+              <mat-label>Enter your email</mat-label>
+              <input  required type="text" [(ngModel)]="user.email" name="email" matInput placeholder="pat@example.com" >
+            </mat-form-field>
+          </div>
+  
+          <div >
+            <mat-form-field appearance="fill">
+              <mat-label>Residenza</mat-label>
+              <input type="text"  [(ngModel)]="user.residenza"  name="residenza" matInput  placeholder="piazza mario 158">
+            </mat-form-field>
+          </div>
+  
+        <button mat-button (click)="annullare(heroForm)">Annulla</button>
+       <button mat-button type="submit" >Create</button>
+      
+    </form>
+      </div>
+  
+    </div>
+
+  </div>
+  
+  
