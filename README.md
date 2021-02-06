@@ -1,4 +1,7 @@
-# StudentiAngularClient
+# StudentiAngularClienT
+
+this project is the simple Forms in angular witch we can add the students on the data base .
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
